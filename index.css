@@ -1,0 +1,41 @@
+#box1{
+    margin: 5%;
+    width: 1280px;
+    height: 720px;
+    border: 3px solid;
+    position: absolute;
+}
+#divImg{
+    width: 100px;
+    height: 100px;
+    position: relative; 
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+img{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin:-60px 0 0 -60px;
+    animation:spin 1s linear infinite;
+    
+}
+
+
+/* Standard syntax */
+@keyframes example {
+    0%   { left:0px; top:0px; -webkit-transform: rotate(360deg); transform:rotate(360deg);}
+    25%  { left:1180px; top:0px; -webkit-transform: rotate(360deg); transform:rotate(360deg);}
+    50%  { left:1180px; top:620px; -webkit-transform: rotate(360deg); transform:rotate(360deg);}
+    75%  { left:0px; top:620px; -webkit-transform: rotate(360deg); transform:rotate(360deg);}
+    100% { left:0px; top:0px; -webkit-transform: rotate(360deg); transform:rotate(360deg);}
+}
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+h1{
+    text-align: center;
+}
