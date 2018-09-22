@@ -14,7 +14,6 @@
     animation-iteration-count: infinite;
 }
 img{
-    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -22,10 +21,10 @@ img{
     height: 120px;
     margin:-60px 0 0 -60px;
     animation:spin 1s linear infinite;
-    
 }
-
-
+h1{
+    text-align: center;
+}
 /* Standard syntax */
 @keyframes example {
     0%   { left:0px; top:0px; -webkit-transform: rotate(360deg); transform:rotate(360deg);}
@@ -35,7 +34,3 @@ img{
     100% { left:0px; top:0px; -webkit-transform: rotate(360deg); transform:rotate(360deg);}
 }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-
-h1{
-    text-align: center;
-}
